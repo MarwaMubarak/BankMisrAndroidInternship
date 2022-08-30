@@ -1,0 +1,187 @@
+--------------------------------------------------------
+Task1
+--------------------------------------------------------
+
+abstract class Shape(){
+    abstract fun area(): Double
+}
+open class Circle(val Radius: Double):Shape()
+{
+    override fun area(): Double{
+        return 3.1415926 * Radius * Radius
+    }
+}
+
+open class Rectangle(val length: Double, val width: Double):Shape()
+{
+    override fun area(): Double {
+        return length * width
+    }
+}
+
+open class Square(val length: Double):Shape()
+{
+    override fun area(): Double {
+        return length * length
+    }
+}
+
+
+fun main(){
+    var circle=Circle(2.0).area()
+    var square=Square(2.0).area()
+    var rectangle=Rectangle(2.0,2.0).area()
+    println("Circle area is $circle")
+    println("Rectangle area is $rectangle")
+    println("Square area is $square")
+
+}
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Task2
+----------------------------------------------------------------------------
+
+fun main(){
+   var list1= listOf<String>("Maze","Mr","More")
+
+    val begin = System.currentTimeMillis()
+    var f=0
+    for (c in list1){
+        if(c[0]=='M'){
+            if( c.contains('r')) {
+                f=1
+                println(c)
+                break
+            }
+        }
+    }
+  
+   
+    val end = System.currentTimeMillis()
+    println("running time ${end-begin} millisecond")
+    
+
+
+
+}
+-----------------------------------------------------------
+-----------------------------------------------------------
+Task3
+
+fun main(){
+   var list1= listOf<String>("Maze","Mr","More")
+
+    val begin = System.currentTimeMillis()
+    var f=0
+    for (c in list1){
+        if(c[0]=='M'){
+            if( c.contains('r')) {
+                f=1
+                println(c)
+                break
+            }
+        }
+    }
+    if(f==0){
+        println("Not Found")
+        for (c in list1) {
+            print(c)
+            print (" ")
+        }
+    }
+   
+    val end = System.currentTimeMillis()
+    println("running time ${end-begin} millisecond")
+    
+
+
+
+}
+-------------------------------------------------
+-------------------------------------------------
+Task4
+------------------------------------------------
+
+fun main(){
+    var list= listOf<String>("a","abc")
+    var f=false
+    for (c in list){
+        if(c.length>=3)
+            f=true
+    }
+    println(f)
+
+
+
+}
+--------------------------------------------
+--------------------------------------------
+Task5
+---------------------------------------------
+
+fun main(){
+    var list= listOf<String>("a","abc")
+    var f=true
+    for (c in list){
+        if(c.length<3)
+            f=false
+    }
+    println(f)
+
+
+
+}---------------------------------------------------
+---------------------------------------------------
+Task6
+---------------------------------------------------
+fun main(){
+    var list1= listOf<String>("Maze","Mr","More")
+    var s="";
+    for (c in list1){
+        if(c[0]=='M'){
+            if( c.contains('r')) {
+                println(s)
+                break
+            }
+        }
+        s=c
+    }
+
+
+
+
+
+}
+-------------------------------------------
+-------------------------------------------
+Task7
+--------------------------------------------
+fun main(){
+    var list= listOf<String>("a","abc")
+    var f=false
+    for (c in list){
+        if(c.length!=3)
+            f=true
+        if(f)
+            println(c)
+    }
+    println(f)
+
+
+
+}
+--------------------------------------------
+-----------------------------------------------
+Task8
+-------------------------------------------------
+fun main(){
+    var list= listOf<String>("a","ab","abc")
+    for (c in list){
+            println(c.length)
+    }
+
+
+
+}
+-----------------------------------------
