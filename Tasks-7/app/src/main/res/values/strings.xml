@@ -13,4 +13,6 @@
     <string name="welcome_dodo">Welcome Dodo!</string>
     <string name="tata">Tata</string>
     <string name="welcome_tata">Welcome Tata!</string>
+    <string name="click">Click</string>
+    <string name="ok">ok</string>
 </resources>

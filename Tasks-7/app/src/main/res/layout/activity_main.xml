@@ -5,54 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#ffe6ff">
-
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/f"
+    >
+    <Button
+        android:id="@+id/btn4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@id/g1"
-        />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/g1"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9"/>
-
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="@string/marwa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btn2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/g1"
-        />
-
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="@string/dodo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btn3"
-        app:layout_constraintStart_toEndOf="@id/btn1"
-        app:layout_constraintTop_toTopOf="@id/g1"
-        />
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="@string/tata"
-        app:layout_constraintTop_toTopOf="@id/g1"
+        android:text="@string/click"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         />
+
+   <androidx.fragment.app.FragmentContainerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/btn4"
+       app:layout_constraintBottom_toTopOf="@id/f5"
+       android:id="@+id/f4"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f5"
+        app:layout_constraintTop_toBottomOf="@id/f4"/>
+
+
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/f"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/g1"-->
+<!--        />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/g1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_percent="0.9"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn1"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/marwa"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/btn2"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/g1"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn2"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/dodo"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/btn3"-->
+<!--        app:layout_constraintStart_toEndOf="@id/btn1"-->
+<!--        app:layout_constraintTop_toTopOf="@id/g1"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn3"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/tata"-->
+<!--        app:layout_constraintTop_toTopOf="@id/g1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/btn2"-->
+<!--        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
